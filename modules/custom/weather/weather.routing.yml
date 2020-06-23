@@ -1,0 +1,6 @@
+weather.weather_page:                               
+  path: '/weather/{city}'
+  defaults:                                                       
+    _controller: '\Drupal\weather\Controller\WeatherPage::getWeather'                          
+  requirements:                                        
+     _permission: 'access content'     
